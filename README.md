@@ -1,72 +1,72 @@
-# The Ad Management System for Moderation
+# Система модерации объявлений
 
-## Overview
+## Обзор
 
-This project is a web application for managing advertisement moderation. It provides a clean interface for moderators to review, approve, reject, and request changes on user-submitted ads. The system includes a modern UI, statistics dashboard, and detailed item view.
+Этот проект представляет собой веб-приложение для управления модерацией объявлений. Оно предоставляет удобный интерфейс для модераторов, позволяющий просматривать новые объявления, одобрять их, отклонять или запрашивать доработку. В системе есть современный интерфейс, панель статистики и детальная страница каждого объявления.
 
-The project is built with:
+Проект построен на основе:
 
 * React 19
 * TypeScript
 * Vite
 * MUI 7
 * React Query
-* Node.js and Express backend
+* Node.js и Express (backend)
 
 ---
 
-## Features
+## Возможности
 
-### Moderator Panel
+### Панель модератора
 
-* Review new advertisements.
-* Approve, reject, or request additional changes.
-* View moderation history.
+* Просмотр новых объявлений.
+* Одобрение, отклонение или запрос доработки.
+* Просмотр истории модерации.
 
-### Statistics Dashboard
+### Панель статистики
 
-* Visual overview of moderator performance.
-* Daily activity statistics.
-* Decision distribution and category reports.
+* Визуальный обзор продуктивности модератора.
+* Статистика активности по дням.
+* Распределение решений и отчеты по категориям.
 
-### Advertisement Viewer
+### Просмотр объявления
 
-* Detailed item view.
-* Image gallery.
-* Seller information.
-* Auto-updating moderation actions.
+* Детальная карточка объявления.
+* Галерея изображений.
+* Информация о продавце.
+* Автоматическое обновление статуса модерации.
 
 ### Backend API
 
-* Ads listing with pagination and filters.
-* Ad details endpoint.
-* Endpoints for approve, reject, and request-changes.
-* Statistics endpoints.
+* Список объявлений с пагинацией и фильтрами.
+* Эндпоинт получения объявления по ID.
+* Эндпоинты для одобрения, отклонения и запроса доработки.
+* Эндпоинты статистики.
 
 ---
 
-## Project Structure
+## Структура проекта
 
 ```
 /
-├── client/      Frontend (React + Vite)
-└── server/      Backend (Node + Express)
+├── client/      Фронтенд (React + Vite)
+└── server/      Бэкенд (Node + Express)
 ```
 
 ---
 
-## Getting Started
+## Начало работы
 
-### 1. Install dependencies
+### 1. Установка зависимостей
 
-Frontend:
+Фронтенд:
 
 ```
 cd client
 npm install
 ```
 
-Backend:
+Бэкенд:
 
 ```
 cd server
@@ -75,47 +75,47 @@ npm install
 
 ---
 
-## Running the App
+## Запуск приложения
 
-Start backend:
+Запуск бэкенда:
 
 ```
 cd server
 npm run dev
 ```
 
-Start frontend:
+Запуск фронтенда:
 
 ```
 cd client
 npm run dev
 ```
 
-The application runs at:
+Приложение доступно по адресам:
 
 ```
-Frontend: http://localhost:5173
-Backend:  http://localhost:3001
+Фронтенд: http://localhost:5173
+Бэкенд:   http://localhost:3001
 ```
 
 ---
 
-## Build for Production
+## Сборка для продакшена
 
-Frontend:
+Фронтенд:
 
 ```
 npm run build
 ```
 
-Backend:
-Deploy as any standard Node server.
+Бэкенд:
+деплой как стандартный Node.js-сервер.
 
 ---
 
-## Environment Variables
+## Переменные окружения
 
-In `client/.env`:
+В `client/.env` укажите:
 
 ```
 VITE_API_URL=http://localhost:3001/api/v1
@@ -123,7 +123,7 @@ VITE_API_URL=http://localhost:3001/api/v1
 
 ---
 
-## Requirements
+## Требования
 
-* Node.js 18 or newer
-* npm 9 or newer
+* Node.js версии 18 или новее
+* npm версии 9 или новее
